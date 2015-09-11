@@ -1,0 +1,27 @@
+{
+  "name": "magnetize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimoneGonzalez/Magnetize.git"
+  },
+  "author": "Simone Gonzalez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SimoneGonzalez/Magnetize/issues"
+  },
+  "homepage": "https://github.com/SimoneGonzalez/Magnetize#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "less-middleware": "^2.0.1",
+    "lodash": "^3.10.1",
+    "mongodb": "^2.0.40"
+    }
+}
