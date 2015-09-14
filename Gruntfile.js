@@ -41,6 +41,21 @@ module.exports = function(grunt) {
           'public/css/main.css': 'src/_styles/sass/main.scss'
         }
       }
+    },
+    watch: {
+      livereload: {
+        options: {
+          livereload: true
+        },
+
+        files: [
+          'public/css/main.css'
+        ]
+      },
+      sass: {
+        files: ['src/**/*.scss'],
+        tasks: ['sass:dev', 'autoprefixer']
+      }
     }
   });
 
@@ -49,6 +64,7 @@ grunt.registerTask('build-dev', [
   'bower_concat',
   'clean',
   'copy',
-  'sass:dev'
+  'sass:dev',
+  'watch'
   ]);
 };
