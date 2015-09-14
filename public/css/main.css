@@ -1,0 +1,14 @@
+@import url(./foundation.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Stalemate);
+h1 {
+  color: blue; }
+
+.empty_box {
+  height: 350px;
+  width: 300px; }
+
+p {
+  color: red; }
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAibWFpbi5jc3MiLAoJInNvdXJjZXMiOiBbCgkJIi4uLy4uL3NyYy9fc3R5bGVzL3Nhc3MvbWFpbi5zY3NzIgoJXSwKCSJzb3VyY2VzQ29udGVudCI6IFtdLAoJIm1hcHBpbmdzIjogIkFBQUEsT0FBTyxDQUFDLHlCQUFzQjtBQUM5QixPQUFPLENBQUMsb0RBQUk7QUFDWixPQUFPLENBQUMsc0RBQUk7QUFFWixFQUFFLENBQUM7RUFDRCxLQUFLLEVBQUUsSUFBSyxHQURWOztBQUlKLFVBQVUsQ0FBQztFQUNULE1BQU0sRUFBRSxLQUFNO0VBQ2QsS0FBSyxFQUFFLEtBQU0sR0FGSDs7QUFLWixDQUFDLENBQUM7RUFDQSxLQUFLLEVBQUUsR0FBSSxHQURWIiwKCSJuYW1lcyI6IFtdCn0= */

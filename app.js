@@ -17,7 +17,7 @@ app.use('/', routes);
 app.use('/new', startNew);
 app.use('/magnetize', magnet);
 
-app.use(express.static('www'));
+app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
