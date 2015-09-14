@@ -4,6 +4,7 @@
 
 h1 {
   color: blue;
+  font-family: 'Stalemate', cursive;
 }
 
 .empty_box {
@@ -11,6 +12,14 @@ h1 {
   width: 300px;
 }
 
+input[type="text"] {
+  width: 300px;
+}
+
+.new {
+  margin: 20px;
+}
+
 p {
-  color: red;
+  font-family: 'Raleway', sans-serif;
 }

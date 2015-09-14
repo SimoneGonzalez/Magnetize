@@ -4,45 +4,47 @@
   <title></title>
   <%- include('stylesheets') %>
 </head>
+<%- include('header') %>
+
 <body>
-<form class="" action="/magnetize">
-  <fieldset>
-    <label value="Title">
-      <input type="text" placeholder="I, Too">
-    </label>
-    <label>
-      <input type="text" placeholder="Langston Hughes">
-    </label>
-  </fieldset>
-  <fieldset>
-    <textarea placeholder="I, too, sing America.
+  <form class="" action="/magnetize">
+    <fieldset>
+      <label value="Title">
+        <input type="text" placeholder="I, Too">
+      </label>
+      <label>
+        <input type="text" placeholder="Langston Hughes">
+      </label>
+    </fieldset>
+    <fieldset>
+      <textarea class="empty_box" placeholder="I, too, sing America.
 
-      I am the darker brother.
-      They send me to eat in the kitchen
-      When company comes,
-      But I laugh,
-      And eat well,
-      And grow strong.
+        I am the darker brother.
+        They send me to eat in the kitchen
+        When company comes,
+        But I laugh,
+        And eat well,
+        And grow strong.
 
-      Tomorrow,
-      I'll be at the table
-      When company comes.
-      Nobody'll dare
-      Say to me,
-      'Eat in the kitchen,'
-      Then.
+        Tomorrow,
+        I'll be at the table
+        When company comes.
+        Nobody'll dare
+        Say to me,
+        'Eat in the kitchen,'
+        Then.
 
-      Besides,
-      They'll see how beautiful I am
-      And be ashamed--
+        Besides,
+        They'll see how beautiful I am
+        And be ashamed--
 
-      I, too, am America.">
-    </textarea>
-    <input type="submit" class="button" value="Magnetize">
-  </fieldset>
-</form>
-<form action="/new">
-  <input type="submit" class="button" value="New Poem">
-</form>
+        I, too, am America.">
+      </textarea>
+      <input type="submit" class="button" value="Magnetize">
+    </fieldset>
+  </form>
+  <form action="/new">
+    <input type="submit" class="button new" value="New Poem">
+  </form>
 </body>
 </html>
