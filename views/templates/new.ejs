@@ -7,18 +7,18 @@
 <%- include('header') %>
 
 <body>
-  <form class="" action="/magnetize">
+  <form class="" action="/new/add" method="POST">
     <fieldset>
       <label value="Title">
-        <input type="text" placeholder="I, Too">
+        <input type="text" name="title" placeholder="I, Too">
       </label>
       <label>
-        <input type="text" placeholder="Langston Hughes">
+        <input type="text" name="author" placeholder="Langston Hughes">
       </label>
     </fieldset>
     <fieldset>
-      <textarea class="empty_box" placeholder="I, too, sing America.
-
+      <textarea class="empty_box" name="poem" placeholder=
+        "I, too, sing America.
         I am the darker brother.
         They send me to eat in the kitchen
         When company comes,
