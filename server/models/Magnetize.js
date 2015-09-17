@@ -1,33 +1,33 @@
 var _ = require('lodash');
-// var ObjectID = require('mongodb').ObjectID;
-// var mongo = require('mongodb');
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+var ObjectID = require('mongodb').ObjectID;
+var mongo = require('mongodb');
+// var mongoose = require('mongoose');
+// var Schema = mongoose.Schema;
 
-//MONGOOSE
-//var poemSchema = new Schema({
-//  author: String
-//  content: String
+// mongoose.connect('mongodb://localhost/magnetize');
+// // MONGOOSE
+// var poemSchema = new Schema({
+//   title: String,
+//   author: String,
+//   poem: String
 // })
+// var Poems = mongoose.model =('Poems', poemSchema);
 
-// mongoose.model =('poems', poemsSchema);
+// MONGODB
+Object.defineProperty(Poems, 'collection', {
+  get: function () {
+    return mongo.getDb().collection('poems');
+  }
+});
+
+Poems.create = function (poem, cb) {
+  Poems.collection.insertOne(poem, cb);
+};
 
 
-//MONGODB
-// Object.defineProperty(Poem, 'collection', {
-//   get: function () {
-//     return mongo.getDb().collection('poems');
-//   }
-// });
 
-// Poem.create = function (poem, cb) {
-//   Poem.collection.insertOne(poem, cb);
-// };
+function setPrototype(pojo) {
+  return _.create(Magnet.prototype, pojo);
+}
 
-// function Magnet () {};
-
-// module.exports = Magnet;
-
-// function setPrototype(pojo) {
-//   return _.create(Magnet.prototype, pojo);
-// }
+module.exports = Poems;

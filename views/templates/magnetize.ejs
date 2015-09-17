@@ -5,6 +5,13 @@
   <%-include('stylesheets')%>
 </head>
 <body>
+  <% poems.forEach(function (poem) { %>
+
+  <h1><% poem.title %></h1>
+  <h3><% poem.author %></h3>
+  <p><% poem.poem %></p>
+
+  <% }); %>
 
   <button class="button">Share</button>
 </body>
