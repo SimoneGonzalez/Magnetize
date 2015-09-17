@@ -23,3 +23,15 @@ input[type="text"] {
 p {
   font-family: 'Raleway', sans-serif;
 }
+
+.word {
+  p {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+    width: auto;
+    padding: 1.5px;
+    margin: 3px;
+    box-shadow: 2px 2px 5px 2px #000;
+  }
+}
