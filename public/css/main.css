@@ -2,13 +2,28 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Stalemate);
 h1 {
-  color: blue; }
+  color: blue;
+  font-family: 'Stalemate', cursive; }
 
 .empty_box {
   height: 350px;
+  width: 300px;
+  text-align: left; }
+
+input[type="text"] {
   width: 300px; }
 
-p {
-  color: red; }
+.new {
+  margin: 20px; }
 
-/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAibWFpbi5jc3MiLAoJInNvdXJjZXMiOiBbCgkJIi4uLy4uL3NyYy9fc3R5bGVzL3Nhc3MvbWFpbi5zY3NzIgoJXSwKCSJzb3VyY2VzQ29udGVudCI6IFtdLAoJIm1hcHBpbmdzIjogIkFBQUEsT0FBTyxDQUFDLHlCQUFzQjtBQUM5QixPQUFPLENBQUMsb0RBQUk7QUFDWixPQUFPLENBQUMsc0RBQUk7QUFFWixFQUFFLENBQUM7RUFDRCxLQUFLLEVBQUUsSUFBSyxHQURWOztBQUlKLFVBQVUsQ0FBQztFQUNULE1BQU0sRUFBRSxLQUFNO0VBQ2QsS0FBSyxFQUFFLEtBQU0sR0FGSDs7QUFLWixDQUFDLENBQUM7RUFDQSxLQUFLLEVBQUUsR0FBSSxHQURWIiwKCSJuYW1lcyI6IFtdCn0= */
+p {
+  font-family: 'Raleway', sans-serif; }
+
+.word p {
+  text-align: center;
+  display: inline-block;
+  border: 1px solid black;
+  width: auto;
+  padding: 1.5px;
+  margin: 3px;
+  box-shadow: 2px 2px 5px 2px #000; }

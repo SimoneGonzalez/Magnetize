@@ -1,7 +1,5 @@
 var express = require('express');
 var router = express.Router();
-// var Poems = require('../models/Magnetize');
-
 
 router.get('/', function(req, res) {
   res.render('templates/new');
@@ -9,14 +7,13 @@ router.get('/', function(req, res) {
 
 router.post('/add', function (req, res) {
 
-  console.log(req.body);
   var collection = global.db.collection('poems');
 
-  collection.save(req.body, function() {
-    console.log('saved');
-    res.redirect('/magnetize');
+  collection.insertOne(req.body, function(err, doc) {
+    res.redirect('/magnetize/' + doc.insertedId);
   });
 
 });
+
 
 module.exports = router;

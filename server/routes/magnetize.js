@@ -1,29 +1,23 @@
 var express = require('express');
 var router = express.Router();
-// var Poems = require('../models/Magnetize');
+var ObjectID = require('mongodb').ObjectID;
 
-
-router.get('/', function(req, res) {
+router.get('/:id', function(req, res) {
 
   var collection = global.db.collection('poems');
 
-  collection.find().toArray(function (err, poems) {
-    var formattedPoems = poems.map(function (poem) {
-      return {
-        _id:       poem._id,
-        author:    poem.author,
-        title:     poem.title,
-        poem:      poem.poem
-      };
-    });
-
+  collection.findOne({_id: ObjectID(req.params.id)}, function(err, poem) {
+    console.log(poem);
     res.render('templates/magnetize', {
-      poems: formattedPoems
+      title: poem.title,
+      author: poem.author,
+      poem: poem.poem
     });
 
-  console.log(formattedPoems);
+
   });
 
 });
+
 
 module.exports = router;
