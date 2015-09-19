@@ -5,7 +5,13 @@
   <%-include('stylesheets')%>
 </head>
 <body>
-
+  <div class="magnet">
+  <% if (poem) { %>
+    <h2><%= title %></h2>
+    <h3><%= author %></h3>
+    <p><%= poem %></p>
+  <% }; %>
+  </div>
   <button class="button">Share</button>
 </body>
 </html>
