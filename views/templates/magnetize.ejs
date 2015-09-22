@@ -9,8 +9,16 @@
   <% if (poem) { %>
     <h2><%= title %></h2>
     <h3><%= author %></h3>
-    <p><%= poem %></p>
-  <% }; %>
+    <% var lines = poem.split('\r\n'); %>
+    <% lines.forEach(function (line) { %>
+      <p>
+        <% var words = line.split(' '); %>
+        <% words.forEach(function (word) { %>
+          <span><%= word %></span>
+        <% }); %>
+      </p>
+    <% }); %>
+  <% } %>
   </div>
   <button class="button">Share</button>
 </body>
