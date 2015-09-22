@@ -1,10 +1,65 @@
-@import "./foundation.min.css";
+@import "../_styles/css/foundation.min.css";
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Stalemate);
 
+.content:before {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url("../images/mandala.jpg");
+  background-position: -575% 50%;
+  z-index: -1;
+  opacity: .2;
+  overflow: hidden;
+}
+
 h1 {
   color: blue;
+  font-size: 5em;
   font-family: 'Stalemate', cursive;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+.magnet {
+  border: 1px solid black;
+  background-color: #333;
+  width: auto;
+  padding: 6px;
+  margin: 3px;
+  box-shadow: 2px 2px 5px 2px #000;
+}
+
+.top {
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  h1 {
+  position: relative;
+  top: 10%;
+  }
+}
+
+.mid {
+  position: relative;
+  left: 10%;
+}
+
+.main {
+  p {
+    font-size: 1.25em;
+  }
+  button {
+    font-size: 1.1em;
+  }
+  h3, p {
+    text-align: center;
+    margin-top: 5%;
+  }
 }
 
 .empty_box {
@@ -21,12 +76,12 @@ input[type="text"] {
   margin: 20px;
 }
 
-p {
+h2, h3, h4, h5, p, span, button, input {
   font-family: 'Raleway', sans-serif;
 }
 
 .word {
-  p {
+  span {
     text-align: center;
     display: inline-block;
     border: 1px solid black;
