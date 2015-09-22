@@ -13,11 +13,7 @@ router.get('/:id', function(req, res) {
       author: poem.author,
       poem: poem.poem
     });
-
-
   });
-
 });
-
 
 module.exports = router;
