@@ -21,6 +21,11 @@ h1 {
   font-family: 'Stalemate', cursive;
 }
 
+
+h2, h3, h4, h5, p, a, span, button, input {
+  font-family: 'Raleway', sans-serif;
+}
+
 button:hover {
   background-color: blue;
 }
@@ -32,6 +37,7 @@ button:hover {
   padding: 6px;
   margin: 3px;
   box-shadow: 2px 2px 5px 2px #000;
+  color: white;
 }
 
 .top {
@@ -62,6 +68,22 @@ button:hover {
   }
 }
 
+.head  {
+  height: 15%;
+  li{
+    margin-top: 5px;
+    display: inline-block;
+    h1 {
+      font-size: 2em;
+      margin-left: 25%;
+    }
+    a {
+      color: white;
+    }
+  }
+}
+
+
 .empty_box {
   height: 350px;
   width: 300px;
@@ -74,10 +96,6 @@ input[type="text"] {
 
 .new {
   margin: 20px;
-}
-
-h2, h3, h4, h5, p, span, button, input {
-  font-family: 'Raleway', sans-serif;
 }
 
 .word {

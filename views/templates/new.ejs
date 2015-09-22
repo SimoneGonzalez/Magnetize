@@ -7,20 +7,20 @@
 <%- include('header') %>
 
 <body>
-  <form class="" action="/new/add" method="POST">
-    <fieldset>
-      <label for="title">Title</label>
-        <input type="text" name="title" placeholder="Your Masterpiece">
-      <label for="author">Name</label>
-        <input type="text" name="author" placeholder="Your Name">
-    </fieldset>
-    <fieldset>
-      <textarea class="empty_box" name="poem" placeholder="Insert your text here"></textarea>
-      <input type="submit" class="button" value="Magnetize">
-    </fieldset>
-  </form>
-  <form action="/new">
-    <input type="submit" class="button new" value="New">
-  </form>
+  <div class="row">
+    <div class="small-4 columns">
+      <form action="/new/add" method="POST">
+        <label for="title">Title</label>
+          <input type="text" name="title" placeholder="Your Masterpiece">
+        <label for="author">Name</label>
+          <input type="text" name="author" placeholder="Your Name">
+        <label for="poem">Text</label>
+          <textarea class="empty_box" name="poem" placeholder="Insert your text here"></textarea>
+        <input type="submit" class="magnet" value="Magnetize">
+      </form>
+    </div>
+    <div class="small-4 columns"></div>
+  </div>
+
 </body>
 </html>
