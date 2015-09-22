@@ -4,9 +4,29 @@
 
 h1 {
   color: blue;
+  font-size: 4em;
   font-family: 'Stalemate', cursive;
 }
 
+button:hover {
+  background-color: blue;
+}
+.magnet {
+  border: 1px solid black;
+  background-color: #333;
+  width: auto;
+  padding: 4px;
+  margin: 3px;
+  box-shadow: 2px 2px 5px 2px #000;
+}
+.main {
+  h1 {
+    background-color: rgba(51, 51, 51, 0.8);
+  }
+  h1, h3 {
+    text-align: center;
+  }
+}
 .empty_box {
   height: 350px;
   width: 300px;
@@ -21,7 +41,7 @@ input[type="text"] {
   margin: 20px;
 }
 
-p {
+h2, h3, h4, h5, p, span, button, input {
   font-family: 'Raleway', sans-serif;
 }
 

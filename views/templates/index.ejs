@@ -5,13 +5,18 @@
     <%-include('stylesheets')%>
   </head>
   <body>
-  <h1>Magnetize</h1>
-  <h3>Instructions</h3>
-  <p>Type in your text. When you want to save ...hit "Magnetize". Don't forget to put your name and give your masterpiece a title. Then you'll be able to share your poem or other text with your friends in magnet form.
-  Let's get started, hit "Start New"!
-  <form action="/new">
-    <button type="submit" class="round button">Start New</button>
-  </form>
+  <div class="row main">
+    <div class="small-6 small-centered columns">
+      <h1>Magnetize</h1>
+      <h3>Instructions</h3>
+      <p>Type in your text. Hit return or enter for a new line. When you want to save, hit "Magnetize". Don't forget to put your name and give your masterpiece a title. Then you'll be able to share your poem or other text with your friends in magnet form. Let's get started, hit "Start New"!
+      <div class="small-centered large-offset-5">
+        <form action="/new">
+          <button type="submit" class="magnet">Start New</button>
+        </form>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
 
