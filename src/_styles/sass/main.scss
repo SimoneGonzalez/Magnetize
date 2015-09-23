@@ -9,10 +9,42 @@
   position: absolute;
   top: 0;
   background-image: url("../images/mandala.jpg");
-  background-position: -575% 50%;
+  background-position: -550% 50%;
   z-index: -1;
   opacity: .2;
   overflow: hidden;
+}
+
+.entry-page:before {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url("../images/flower-of-life.jpg");
+  background-position: -550% 50%;
+  z-index: -1;
+  opacity: .2;
+  overflow: hidden;
+}
+
+.new:before {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url("../images/fol.png");
+  overflow: hidden;
+  background-attachment: local;
+}
+
+.new {
+  .white {
+    background-color: white;
+    color: black;
+    display: inline-block;
+  }
 }
 
 h1 {
@@ -69,10 +101,8 @@ button:hover {
 }
 
 .head  {
-  height: 15%;
-  li{
-    margin-top: 5px;
-    display: inline-block;
+  height: auto;
+  li {
     h1 {
       font-size: 2em;
       margin-left: 25%;
@@ -83,9 +113,8 @@ button:hover {
   }
 }
 
-
 .empty_box {
-  height: 350px;
+  height: 300px;
   width: 300px;
   text-align: left;
 }
@@ -96,9 +125,13 @@ input[type="text"] {
 
 .new {
   margin: 20px;
+  color: black;
 }
 
 .word {
+  .center-text {
+    text-align: center;
+  }
   span {
     text-align: center;
     display: inline-block;

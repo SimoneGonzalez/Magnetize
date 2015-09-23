@@ -4,22 +4,21 @@
   <title></title>
   <%- include('stylesheets') %>
 </head>
-<%- include('header') %>
 
 <body>
-  <div class="content">
+  <div class="new">
     <div class="row">
       <div class="small-4 small-centered columns">
         <form action="/new/add" method="POST">
-          <label for="title">Title</label>
+          <label for="title" class="magnet white">Title</label>
             <input type="text" name="title" placeholder="Your Masterpiece">
-          <label for="author">Name</label>
+          <label for="author" class="magnet white">Name</label>
             <input type="text" name="author" placeholder="Your Name">
-          <label for="poem">Text</label>
+          <label for="poem" class="magnet white">Text</label>
             <textarea class="empty_box" name="poem" placeholder="Insert your text here"></textarea>
           <div class="row">
             <div class="small-4 small-centered columns">
-              <input type="submit" class="magnet" value="Magnetize">
+              <input type="submit" class="magnet button medium" value="Magnetize">
             </div>
           </div>
         </form>
