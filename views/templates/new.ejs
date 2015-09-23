@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <link rel="shortcut icon" href="../images/favicon.ico">
+  <title>Magnetize | new</title>
   <%- include('stylesheets') %>
 </head>
-<%- include('header') %>
 
 <body>
-  <form class="" action="/new/add" method="POST">
-    <fieldset>
-      <label for="title">Title</label>
-        <input type="text" name="title" placeholder="Your Masterpiece">
-      <label for="author">Name</label>
-        <input type="text" name="author" placeholder="Your Name">
-    </fieldset>
-    <fieldset>
-      <textarea class="empty_box" name="poem" placeholder="Insert your text here"></textarea>
-      <input type="submit" class="button" value="Magnetize">
-    </fieldset>
-  </form>
-  <form action="/new">
-    <input type="submit" class="button new" value="New">
-  </form>
+  <div class="bar">
+    <h1>Magnetize</h1>
+  </div>
+  <div class="new">
+    <div class="row">
+      <div class="small-4 small-centered columns">
+        <form action="/new/add" method="POST">
+          <label for="title" class="magnet white">Title</label>
+            <input type="text" name="title" placeholder="Your Masterpiece">
+          <label for="author" class="magnet white">Name</label>
+            <input type="text" name="author" placeholder="Your Name">
+          <label for="poem" class="magnet white">Text</label>
+            <textarea class="empty_box" name="poem" placeholder="Insert your text here"></textarea>
+          <div class="row">
+            <div class="small-4 small-centered columns">
+              <input type="submit" class="magnet button medium" value="Magnetize">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="small-4 columns"></div>
+    </div>
+  </div>
 </body>
 </html>
